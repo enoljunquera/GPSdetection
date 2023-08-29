@@ -21,7 +21,7 @@ def main():
     log_output("########################################################")
     log_output("\n")
     
-    model_path = "Modelo_1.tflite"
+    model_path = "modelo_1.tflite"
     interpreter = make_interpreter(model_path)
     interpreter.allocate_tensors()
 
