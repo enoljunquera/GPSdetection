@@ -22,7 +22,7 @@ def main():
     input_shape = input_details[0]['shape']
     num_input_values = input_shape[1]
     print("\n")
-    print(f"The model requires {num_input_values} input attributes.")
+    print("The model requires " + str(num_input_values) + " input attributes.")
 
     # Read input values from the file
     input_values = []
@@ -50,7 +50,7 @@ def main():
 
         # Display the results
         print("\n*************\nClassification Results for Package:\n*************\n")
-        print("Attributes:", input_package[0][:len(input_values)])
+        print("Attributes: " + str( input_package[0][:len(input_values)]))
         for c in classes:
             print('Interference: {}, Score: {:.5f}'.format((c.score > 0.5), c.score))
             input("\nPress Enter to continue...")
